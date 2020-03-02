@@ -1,5 +1,5 @@
-docker build -t myimage:latest -f- https://github.com/ohheybell/gitpollrepo.git <<EOF
-COPY . /ohheybell
+CMD docker build -t myimage:latest -f- https://github.com/ohheybell/gitpollrepo.git <<EOF
+COPY . /ohheybell-poll-pusher
 
 CMD pip install virtualenv
 CMD virtualenv .venv
