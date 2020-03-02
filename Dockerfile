@@ -1,3 +1,4 @@
+FROM scratch
 CMD docker build -t myimage:latest -f- https://github.com/ohheybell/gitpollrepo.git <<EOF
 COPY . /ohheybell-poll-pusher
 
